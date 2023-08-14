@@ -29,7 +29,7 @@ console.log(fruit(2, 4));
 
 const num = Number(18);
 console.log(num);
-*/
+
 // LECTURE 34. Function Declarations vs. Expressions
 // function declaration
 function calcAge1(birthyear) {
@@ -43,3 +43,22 @@ const calcAge2 = function (birthyear) {
 }
 const age2 = calcAge2(2004);
 console.log(age2);
+*/
+// LECTURE 35: Arrow Functions
+const calcAge2 = function (birthyear) {
+    return 2023 - birthyear;  
+}
+// Arrow function 
+const calcAge3 = birthyear => 2023 - birthyear;
+const age3 = calcAge3(2004);
+console.log(age3);
+
+const yearsUntillRetirement = (birthyear, fristName) => {
+    const age = 2023 - birthyear;
+    const retirement = 65 - age;
+    // return retirement;
+    return `${fristName} retires in ${retirement} years`
+}
+
+console.log(yearsUntillRetirement(2004, 'Abdimalik'));
+console.log(yearsUntillRetirement(2005, 'Asiya'));

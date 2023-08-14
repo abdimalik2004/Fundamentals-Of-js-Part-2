@@ -11,7 +11,7 @@ const kenya = describeCountry('kenya', 30, 'nairobi')
 console.log(somalia);
 console.log(ethipia);
 console.log(kenya);
-*/
+
 // LECTURE 34 : function declaration and expression
 function percentageOfWorld1(population) {
     return (population / 7900) * 100;
@@ -29,3 +29,4 @@ const perSom = percentageOfWorld2(20);
 const perEth = percentageOfWorld2(145);
 const perKenya = percentageOfWorld2(30);
 console.log(perSom, perEth, perKenya);
+*/
