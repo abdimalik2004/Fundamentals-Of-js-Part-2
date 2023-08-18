@@ -43,7 +43,7 @@ const calcAge2 = function (birthyear) {
 }
 const age2 = calcAge2(2004);
 console.log(age2);
-*/
+
 // LECTURE 35: Arrow Functions
 const calcAge2 = function (birthyear) {
     return 2023 - birthyear;  
@@ -62,3 +62,71 @@ const yearsUntillRetirement = (birthyear, fristName) => {
 
 console.log(yearsUntillRetirement(2004, 'Abdimalik'));
 console.log(yearsUntillRetirement(2005, 'Asiya'));
+
+// LECTURE  36: Functions Calling Other Functions
+function cutFruitPieces(fruit) {
+    return fruit * 5;
+}
+
+function fruit(apples, oranges) {
+
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+
+    const juice = `juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange`;
+    return juice;
+}
+
+console.log(fruit(2, 3));
+
+// LECTURE 37: Reviewing Functions
+
+const calcAge = function (birthyear) {
+    return 2023 - birthyear;
+}
+const yearsUntillRetirement = function (birthyear, fristName) {
+    const age = calcAge(birthyear);
+    const retirement = 65 - age;
+    if(retirement > 0) {
+        console.log(`${fristName} retire in ${retirement} years`);
+        return retirement;
+
+    } else {
+        console.log(`${fristName} has already retired`);
+        return - 1;
+    }
+}
+
+console.log(yearsUntillRetirement(2004, 'Abdimalik'));
+console.log(yearsUntillRetirement(1950, 'Asiya'));
+
+// LECTURE 39. Introduction to Arrays
+const friend1 = 'Ibrahim';
+const friend2 = 'Iraad';
+const friend3 = 'Yuusuf';
+
+const friends = ['Ibrahim', 'Iraad', 'Yuusuf'];
+console.log(friends);
+
+const years = new Array (1991, 200, 2004, 2023);
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(friends.length);
+console.log(friends.length - 1);
+
+friends[2] = 'Garad';
+console.log(friends);
+
+const Abdimalik = ['Abdimalik', 'Abdirahman', 2023 - 2004, 'Coder', friends];
+console.log(Abdimalik);
+console.log(Abdimalik.length);
+const calcAge = function (birthyear) {
+    return 2023 - birthyear;
+}
+const years1 = [1990, 1967, 2002, 2018, 2020];
+const age1 = calcAge(years1[0]);
+const age2 = calcAge(years1[1]);
+const age3 = calcAge(years.length - 1);
+console.log(age1, age2, age3);
+const ages = [calcAge(years1[0]), calcAge(years1[1], calcAge(years1[years1.length - 1]))];
+*/
