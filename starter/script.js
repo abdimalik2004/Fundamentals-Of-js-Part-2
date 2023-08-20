@@ -130,3 +130,32 @@ const age3 = calcAge(years.length - 1);
 console.log(age1, age2, age3);
 const ages = [calcAge(years1[0]), calcAge(years1[1], calcAge(years1[years1.length - 1]))];
 */
+// LECTURE 40. Basic Array Operations (Methods)
+const freinds = ['Ibrahim', 'Iraad', 'Yuusuf'];
+// push method adds element to the end of the array
+const newLength=  freinds.push('Abdiii');
+console.log(freinds);
+console.log(newLength);
+// unshift method adds elemnt to the frist of the array
+freinds.unshift('Abdi');
+console.log(freinds);
+
+// removes the last elements at  the end of the array
+const popped = freinds.pop();
+console.log(freinds);
+console.log(popped);
+
+// shift method removes the frist element of the array
+const unshifted = freinds.shift();
+console.log(unshifted);
+console.log(freinds);
+freinds.push(19);
+console.log(freinds.indexOf('Iraad'));
+console.log(freinds.includes(19));
+console.log(freinds.includes('Abdiii'));
+
+if (freinds.includes('Abdi')) {
+    console.log('Woo ku jira');
+} else {
+    console.log('kuma jiro');
+}
