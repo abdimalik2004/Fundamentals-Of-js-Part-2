@@ -160,3 +160,12 @@ if (freinds.includes('Abdi')) {
     console.log('kuma jiro');
 }
 */
+// LECTURE 42. Introduction to Objects
+const abdimalik = {
+    firstName: 'Abdimalik',
+    lastName: 'Abdirahman',
+    age: 2023 - 2004,
+    job: 'Teacher',
+    freinds: ['Ibra', "Iraad"]
+};
+console.log(abdimalik);
