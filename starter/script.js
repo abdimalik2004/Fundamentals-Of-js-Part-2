@@ -129,7 +129,7 @@ const age2 = calcAge(years1[1]);
 const age3 = calcAge(years.length - 1);
 console.log(age1, age2, age3);
 const ages = [calcAge(years1[0]), calcAge(years1[1], calcAge(years1[years1.length - 1]))];
-*/
+
 // LECTURE 40. Basic Array Operations (Methods)
 const freinds = ['Ibrahim', 'Iraad', 'Yuusuf'];
 // push method adds element to the end of the array
@@ -159,3 +159,4 @@ if (freinds.includes('Abdi')) {
 } else {
     console.log('kuma jiro');
 }
+*/
