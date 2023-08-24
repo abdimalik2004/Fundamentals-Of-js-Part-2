@@ -49,5 +49,6 @@ const myCountry = {
     population: '20 million',
     neighbours: ['Ethiopia', 'Kenya', 'Djbouti']
 };
+// LECTURE: Dot vs. Bracket Notation
 console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries
 and a capital called ${myCountry.capital}`)
