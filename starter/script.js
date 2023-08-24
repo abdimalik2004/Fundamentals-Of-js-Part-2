@@ -169,7 +169,7 @@ const abdimalik = {
     freinds: ['Ibra', "Iraad"]
 };
 console.log(abdimalik);
-*/
+
 // LECTURE 43. Dot vs. Bracket Notation
 const abdimalik = {
     firstName: 'Abdimalik',
@@ -201,3 +201,36 @@ abdimalik['twitter'] = '@AbdimalikMahad1';
 console.log(abdimalik);
 
 console.log(`${abdimalik.firstName} has ${abdimalik.freinds.length} friends, and his best freind is called ${abdimalik.freinds[0]}`);
+*/
+// LECTURE 44. Object Methods
+const abdimalik = {
+    firstName: 'Abdimalik',
+    lastName: 'Abdirahman',
+    birthyear: 2004,
+    job: 'Teacher',
+    freinds: ['Ibra', "Iraad", "abdii"],
+    hasDriverslicence: true,
+
+    // calcAge: function(birthyear) {
+    //     return 2023 - birthyear;
+    // }
+
+    // calcAge: function() {
+    //     // console.log(this);
+    //     return 2023 - this.birthyear;
+    // }
+    calcAge: function() {
+        this.age = 2023 - this.birthyear;
+        return this.age;
+    },
+    getSummary: function() {
+        return `${this.firstName} is a ${this.calcAge()}-year old ${abdimalik.job}, and he has ${this.hasDriverslicence ? 'a' : 'no'} drivers license.`
+    }
+};
+console.log(abdimalik.calcAge());
+console.log(abdimalik.age); // Output 19;
+console.log(abdimalik.age); // Output 19;
+console.log(abdimalik.age); // Output 19;
+console.log(abdimalik.getSummary());
+// console.log(abdimalik['age'](2004)); // Output 19;
+console.log(`${abdimalik.firstName} is a ${abdimalik.calcAge()}-year old ${abdimalik.job}, and he has ${abdimalik.hasDriverslicence ? 'a' : 'no'} drivers license`);
