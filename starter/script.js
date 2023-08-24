@@ -159,7 +159,7 @@ if (freinds.includes('Abdi')) {
 } else {
     console.log('kuma jiro');
 }
-*/
+
 // LECTURE 42. Introduction to Objects
 const abdimalik = {
     firstName: 'Abdimalik',
@@ -169,3 +169,15 @@ const abdimalik = {
     freinds: ['Ibra', "Iraad"]
 };
 console.log(abdimalik);
+*/
+// LECTURE 43. Dot vs. Bracket Notation
+const abdimalik = {
+    firstName: 'Abdimalik',
+    lastName: 'Abdirahman',
+    age: 2023 - 2004,
+    job: 'Teacher',
+    freinds: ['Ibra', "Iraad"]
+};
+// console.log(abdimalik);
+console.log(abdimalik.lastName);
+console.log(abdimalik['lastName']);
