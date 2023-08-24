@@ -47,8 +47,21 @@ const myCountry = {
     capital: 'Mogadisho',
     language: 'Somali',
     population: '20 million',
-    neighbours: ['Ethiopia', 'Kenya', 'Djbouti']
+    neighbours: ['Ethiopia', 'Kenya', 'Djbouti'],
+    describe: function () {
+        return console.log(`${this.country} has ${this.population} ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capitall called ${this.capital}`)
+    },
+    checkIsland: function () {
+        this.isIsland = this.neighbours.length === 0 ? true :
+        false;
+        // Even simpler version (see why this works...)
+        // this.isIsland = !Boolean(this.neighbours.length);
+        }
 };
 // LECTURE: Dot vs. Bracket Notation
 console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries
 and a capital called ${myCountry.capital}`)
+myCountry.describe();
+myCountry.checkIsland();
+console.log(myCountry.describe());
+console.log(myCountry.checkIsland())
