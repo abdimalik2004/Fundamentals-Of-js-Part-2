@@ -176,8 +176,28 @@ const abdimalik = {
     lastName: 'Abdirahman',
     age: 2023 - 2004,
     job: 'Teacher',
-    freinds: ['Ibra', "Iraad"]
+    freinds: ['Ibra', "Iraad", "abdii"]
 };
 // console.log(abdimalik);
 console.log(abdimalik.lastName);
 console.log(abdimalik['lastName']);
+
+const nameKey = 'Name';
+console.log(abdimalik['first' + nameKey]);
+console.log(abdimalik['last' + nameKey]);
+
+// console.log(abdimalik.'last' + nameKey);
+// const interestedIn = prompt('What do you want to know about abdimalik? choose between firstname, lastname,age,job,friends');
+// console.log(abdimalik[interestedIn]);
+
+// if(abdimalik[interestedIn]) {
+//     console.log(abdimalik[interestedIn]);
+// } else {
+//     console.log('Wrong request! choose between firstname, lastname,age,job,friends')
+// }
+
+abdimalik.location = 'Somalia';
+abdimalik['twitter'] = '@AbdimalikMahad1';
+console.log(abdimalik);
+
+console.log(`${abdimalik.firstName} has ${abdimalik.freinds.length} friends, and his best freind is called ${abdimalik.freinds[0]}`);
