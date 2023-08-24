@@ -41,3 +41,13 @@ const percentages = [
 ];
 console.log(percentages);
 */
+// LECTURE: Introduction to Objects
+const myCountry = {
+    country: 'Somalia',
+    capital: 'Mogadisho',
+    language: 'Somali',
+    population: '20 million',
+    neighbours: ['Ethiopia', 'Kenya', 'Djbouti']
+};
+console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries
+and a capital called ${myCountry.capital}`)
