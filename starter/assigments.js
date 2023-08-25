@@ -40,7 +40,7 @@ const percentages = [
     percentageOfWorld1(populations[3]),
 ];
 console.log(percentages);
-*/
+
 // LECTURE: Introduction to Objects
 const myCountry = {
     country: 'Somalia',
@@ -65,3 +65,7 @@ myCountry.describe();
 myCountry.checkIsland();
 console.log(myCountry.describe());
 console.log(myCountry.checkIsland())
+*/
+// LECTURE: Iteration: The for Loop
+for (let voter = 1; voter <= 50; voter++)
+ console.log(`Voter number ${voter} is currently voting`);
