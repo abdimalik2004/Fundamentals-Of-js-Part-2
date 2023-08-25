@@ -201,7 +201,7 @@ abdimalik['twitter'] = '@AbdimalikMahad1';
 console.log(abdimalik);
 
 console.log(`${abdimalik.firstName} has ${abdimalik.freinds.length} friends, and his best freind is called ${abdimalik.freinds[0]}`);
-*/
+
 // LECTURE 44. Object Methods
 const abdimalik = {
     firstName: 'Abdimalik',
@@ -234,3 +234,13 @@ console.log(abdimalik.age); // Output 19;
 console.log(abdimalik.getSummary());
 // console.log(abdimalik['age'](2004)); // Output 19;
 console.log(`${abdimalik.firstName} is a ${abdimalik.calcAge()}-year old ${abdimalik.job}, and he has ${abdimalik.hasDriverslicence ? 'a' : 'no'} drivers license`);
+*/
+// LECTURE 46. Iteration: The for Loop
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 2');
+// console.log('Lifting weights repetition 3');
+// console.log('Lifting weights repetition 4 ');
+// for loop keeps running while condition is true
+for(let rep = 1; rep <= 10; rep++ ) {
+    console.log(`Lifting weights repetition ${rep}`);
+};
