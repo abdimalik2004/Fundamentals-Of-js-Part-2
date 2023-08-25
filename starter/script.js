@@ -234,7 +234,7 @@ console.log(abdimalik.age); // Output 19;
 console.log(abdimalik.getSummary());
 // console.log(abdimalik['age'](2004)); // Output 19;
 console.log(`${abdimalik.firstName} is a ${abdimalik.calcAge()}-year old ${abdimalik.job}, and he has ${abdimalik.hasDriverslicence ? 'a' : 'no'} drivers license`);
-*/
+
 // LECTURE 46. Iteration: The for Loop
 // console.log('Lifting weights repetition 1');
 // console.log('Lifting weights repetition 2');
@@ -243,4 +243,43 @@ console.log(`${abdimalik.firstName} is a ${abdimalik.calcAge()}-year old ${abdim
 // for loop keeps running while condition is true
 for(let rep = 1; rep <= 10; rep++ ) {
     console.log(`Lifting weights repetition ${rep}`);
+};
+*/
+// LECTURE 47. Looping Arrays, Breaking and Continuing
+const abdimalik = [
+    'Abdimalik',
+    'Abdirahman',
+    2023 - 2004,
+    'Teacher',
+    ['Ibra', "Iraad", 'Yuusuf'],
+    true
+];
+const types = [];
+for (let i = 0; i < abdimalik.length ; i++) {
+    console.log(abdimalik[i],typeof abdimalik[i]);
+    // types[i] = typeof abdimalik[i];
+    types.push(typeof abdimalik[i])
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+for(let i = 0; i < years.length; i++) {
+    ages.push(2023 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+console.log('------ONLY STRINGS----');
+for (let i = 0; i < abdimalik.length ; i++) {
+    if(typeof abdimalik[i] !== 'string') continue;
+    console.log(abdimalik[i],typeof abdimalik[i]);
+};
+
+// continue and break
+console.log('------BREAK WITH NUMBER----');
+for (let i = 0; i < abdimalik.length ; i++) {
+    if(typeof abdimalik[i] === 'number') break;
+    console.log(abdimalik[i], typeof abdimalik[i]);
 };
