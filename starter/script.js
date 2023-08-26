@@ -244,7 +244,7 @@ console.log(`${abdimalik.firstName} is a ${abdimalik.calcAge()}-year old ${abdim
 for(let rep = 1; rep <= 10; rep++ ) {
     console.log(`Lifting weights repetition ${rep}`);
 };
-*/
+
 // LECTURE 47. Looping Arrays, Breaking and Continuing
 const abdimalik = [
     'Abdimalik',
@@ -283,3 +283,43 @@ for (let i = 0; i < abdimalik.length ; i++) {
     if(typeof abdimalik[i] === 'number') break;
     console.log(abdimalik[i], typeof abdimalik[i]);
 };
+
+// LECTURE 48. Looping Backwards and Loops in Loops
+const abdimalik = [
+    'Abdimalik',
+    'Abdirahman',
+    2023 - 2004,
+    'Teacher',
+    ['Ibra', "Iraad", 'Yuusuf'],
+    true
+];
+for(let i = abdimalik.length - 1; i >= 0; i-- ) {
+    console.log(i, abdimalik[i]);
+}
+
+for(let exercise = 1; exercise <4; exercise++) {
+    console.log(`---------Strating exercise ${exercise} `);
+
+    for(let rep = 1; rep < 6; rep++){
+        console.log(`Exercise ${exercise} Lifting weight repetition ${rep} 💪`)
+    }
+};
+*/
+// LECTURE 49. The while Loop
+for(let rep = 1; rep <= 10; rep++ ) {
+    console.log(`Lifting weights repetition ${rep}`);
+};
+let rep = 1; 
+while (rep <= 10) {
+    console.log(`WHILE: Lifting weights repetition ${rep}`);
+    rep++;
+};
+
+let dice =Math.trunc(Math.random() * 6) +1;
+console.log(dice);
+
+while (dice !== 6) {
+    console.log(`you rolled a ${dice}`);
+    dice =Math.trunc (Math.random() * 6) + 1;
+    if(dice === 6) console.log(`Loops is about to end`);
+}
